@@ -7,7 +7,7 @@ function Signup() {
     const handle=async (e)=>
     {
         e.preventDefault();
-        const res=await axios.post("http://localhost:4000/user/signup",form);
+        const res=await axios.post("https://task-4-6f1r.onrender.com/signup",form);
         localStorage.setItem("token",res.data.token);
         alert("signup sucessfully");
         setForm({email:"",password:"",role:"User"});
