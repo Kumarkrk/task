@@ -1,0 +1,10 @@
+import express from 'express';
+import { create,get,getall,delete1,update } from '../Controllers/Controllers.js';
+import auth from '../middle/auth.js';
+const route=express.Router();
+route.post("/",auth,create);
+route.get("/:id",auth,get);
+route.get("/",auth,getall);
+route.put("/:id",auth,update);
+route.delete("/:id",auth,delete1);
+export default route;
