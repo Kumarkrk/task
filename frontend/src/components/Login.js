@@ -7,7 +7,7 @@ function Login() {
     const handle=async (e)=>
     {
         e.preventDefault();
-        const res=await axios.post("http://localhost:4000/user/login",form);
+        const res=await axios.post("https://task-4-6f1r.onrender.com/login",form);
         localStorage.setItem("token",res.data.token);
         alert("Login sucessfully");
         setForm({email:"",password:""});
