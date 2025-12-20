@@ -4,6 +4,13 @@ import axios from 'axios';
 
 function Login() {
      const[form,setForm]=useState({email:"",password:""});
+     const res = await axios.post(
+  "https://task-4-6f1r.onrender.com/user/login",
+  form
+);
+
+console.log("LOGIN RESPONSE:", res.data);
+localStorage.setItem("token", res.data.token);
     const handle=async (e)=>
     {
         e.preventDefault();
