@@ -14,7 +14,7 @@ const [data, setData] = useState([]);
     const fetchData = useCallback(async () => {
   if (!token) return;
 
-  const res = await axios.get("http://localhost:4000/", {
+  const res = await axios.get("https://task-4-6f1r.onrender.com/", {
     headers: { Authorization: `Bearer ${token}` },
   });
   setData(res.data);
@@ -34,7 +34,7 @@ const handle = async (e) => {
     if (edit) {
       // 🔄 UPDATE
       await axios.put(
-        `http://localhost:4000/${edit}`,
+        `https://task-4-6f1r.onrender.com/${edit}`,
         form,
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -70,7 +70,7 @@ const handle = async (e) => {
   // const[id,setId]=useState("");
 const clear1=async(id)=>
 {
-     await axios.delete(`http://localhost:4000/${id}`,{
+     await axios.delete(`https://task-4-6f1r.onrender.com/${id}`,{
       headers:{Authorization:`Bearer ${token}`}
      });
       fetchData();
