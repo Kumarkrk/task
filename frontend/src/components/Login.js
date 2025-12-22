@@ -3,9 +3,10 @@ import { useState } from 'react';
 import axios from 'axios';
 
 function Login() {
+     const API_URL = "https://task-4-6f1r.onrender.com";
      const[form,setForm]=useState({email:"",password:""});
      const res = axios.post(
-  "https://task-4-6f1r.onrender.com/user/login",
+ `${API_URL}/user/login`,
   form
 );
 
