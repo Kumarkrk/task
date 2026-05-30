@@ -14,7 +14,7 @@ const [data, setData] = useState([]);
     const fetchData = useCallback(async () => {
   if (!token) return;
 
-  const res = await axios.get("https://task-4-6f1r.onrender.com/", {
+  const res = await axios.get("https://task-5-rioh.onrender.com/", {
     headers: { Authorization: `Bearer ${token}` },
   });
   setData(res.data);
