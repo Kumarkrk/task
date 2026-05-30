@@ -18,74 +18,74 @@ https://task-4-6f1r.onrender.com
 
 ## 📖 Overview
 
-TaskFlow Manager 2025 helps organizations and individuals efficiently manage tasks through a secure and user-friendly platform. The system supports authentication, authorization, task assignment, and dashboard-based management.
+TaskFlow Manager 2025 is a secure task management platform designed to help teams and individuals organize, track, and manage tasks efficiently.
 
-Users can register, log in, and manage tasks according to their assigned roles. Admins have complete control over task operations, while users can manage their own assigned tasks.
+The application supports:
+
+* JWT Authentication
+* Role-Based Access Control (RBAC)
+* Admin and User Dashboards
+* Task Creation & Management
+* Priority & Status Tracking
+* Responsive UI
 
 ---
 
 ## ✨ Features
 
-### 🔐 Authentication & Security
+### 🔐 Authentication
 
-* User Registration
+* User Signup
 * User Login
-* JWT Authentication
+* JWT-based Authentication
 * Protected Routes
-* Role-Based Access Control (RBAC)
 
-### 👥 Role-Based Access
+### 👥 Role-Based Access Control
 
 #### Admin Dashboard
 
-* View all tasks
-* Create tasks
-* Update tasks
-* Delete tasks
-* Manage assigned tasks
+* View All Tasks
+* Create Tasks
+* Update Tasks
+* Delete Tasks
+* Manage Users
 
 #### User Dashboard
 
-* View personal tasks
-* Update task status
-* Manage assigned tasks
+* View Assigned Tasks
+* Update Task Status
+* Manage Personal Tasks
 
 ### 📝 Task Management
 
-* Create new tasks
-* Edit existing tasks
-* Delete tasks
-* Assign priorities
-* Track task status
-* Due date management
-
-### 📊 Task Attributes
-
-Each task includes:
+Each task contains:
 
 * Title
 * Description
 * Due Date
-* Priority
+* Priority Level
+* Status Tracking
 
-  * Low
-  * Medium
-  * High
-  * Urgent
-* Status
+### 📊 Priority Levels
 
-  * To Do
-  * In Progress
-  * Review
-  * Completed
+* Low
+* Medium
+* High
+* Urgent
 
-### 🎨 User Interface
+### 📌 Status Types
+
+* To Do
+* In Progress
+* Review
+* Completed
+
+### 🎨 UI Features
 
 * Responsive Design
-* Modern Dashboard Layout
-* Interactive Task Cards
-* Clean Navigation
-* Mobile-Friendly UI
+* Dashboard Layout
+* Modern Interface
+* Mobile Friendly
 
 ---
 
@@ -127,43 +127,45 @@ Each task includes:
 ```text
 task/
 │
-├── client/
+├── frontend/
 │   ├── public/
 │   ├── src/
-│   │   ├── Components/
-│   │   ├── Pages/
-│   │   ├── App.js
-│   │   └── index.js
 │   └── package.json
 │
-├── server/
+├── backend/
 │   ├── controllers/
 │   ├── middleware/
 │   ├── models/
 │   ├── routes/
-│   ├── config/
-│   ├── server.js
 │   └── package.json
 │
-├── README.md
-└── .gitignore
+├── images/
+│   ├── Screenshot 2026-05-30 173817.png
+│   ├── Screenshot 2026-05-30 173906.png
+│   └── Screenshot 2026-05-30 174104.png
+│
+└── README.md
 ```
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-### 🏠 Landing Page
+## 🏠 Landing Page
 
-<img src="images/landing-page.png" width="900"/>
+<img src="images/Screenshot 2026-05-30 173817.png" width="900"/>
 
-### 🔑 Login Page
+---
 
-<img src="images/login-page.png" width="900"/>
+## 🔐 Login Page
 
-### 📝 Signup Page
+<img src="images/Screenshot 2026-05-30 173906.png" width="900"/>
 
-<img src="images/signup-page.png" width="900"/>
+---
+
+## 📝 Signup Page
+
+<img src="images/Screenshot 2026-05-30 174104.png" width="900"/>
 
 ---
 
@@ -175,27 +177,23 @@ task/
 git clone https://github.com/Kumarkrk/task.git
 ```
 
-Move into project directory:
+### Navigate to Project Folder
 
 ```bash
 cd task
 ```
 
----
-
 ### Install Backend Dependencies
 
 ```bash
-cd server
+cd backend
 npm install
 ```
-
----
 
 ### Install Frontend Dependencies
 
 ```bash
-cd ../client
+cd ../frontend
 npm install
 ```
 
@@ -203,7 +201,7 @@ npm install
 
 ## 🔑 Environment Variables
 
-Create a `.env` file inside the server folder:
+Create a `.env` file inside the backend folder:
 
 ```env
 PORT=5000
@@ -215,31 +213,29 @@ JWT_SECRET=your_secret_key
 
 ---
 
-## ▶️ Run the Application
+## ▶️ Running the Application
 
 ### Start Backend
 
 ```bash
-cd server
+cd backend
 npm start
 ```
 
-Backend runs at:
+Backend:
 
 ```text
 http://localhost:5000
 ```
 
----
-
 ### Start Frontend
 
 ```bash
-cd client
+cd frontend
 npm start
 ```
 
-Frontend runs at:
+Frontend:
 
 ```text
 http://localhost:3000
@@ -271,12 +267,12 @@ http://localhost:3000
 
 * Email Notifications
 * Task Comments
-* Team Collaboration
 * File Attachments
-* Dark Mode
+* Team Collaboration
 * Activity Logs
-* Real-Time Updates using Socket.IO
-* Advanced Analytics Dashboard
+* Dark Mode
+* Real-Time Updates with Socket.IO
+* Analytics Dashboard
 
 ---
 
@@ -284,17 +280,14 @@ http://localhost:3000
 
 ### Kamuju Rohini Kumar
 
-* GitHub: https://github.com/Kumarkrk
-* LinkedIn: https://linkedin.com/in/kamuju-rohini-kumar-69925522b
+GitHub:
+https://github.com/Kumarkrk
+
+LinkedIn:
+https://linkedin.com/in/kamuju-rohini-kumar-69925522b
 
 ---
 
 ## ⭐ Support
 
 If you found this project useful, please give it a star ⭐ on GitHub.
-
----
-
-## 📜 License
-
-This project is open-source and available under the MIT License.
