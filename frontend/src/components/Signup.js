@@ -7,7 +7,7 @@ function Signup() {
     const handle=async (e)=>
     {
         e.preventDefault();
-        const res=await axios.post("https://task-5-rioh.onrender.com/user/signup",form);
+        const res=await axios.post("ask-j4whl9ss7-kumars-projects-437939b2.vercel.app/user/signup",form);
         localStorage.setItem("token",res.data.token);
         alert("signup sucessfully");
         setForm({email:"",password:"",role:"User"});
