@@ -175,7 +175,7 @@ import axios from "axios";
 import "./Data2.css";
 
 function Data1() {
-  const API = "ask-j4whl9ss7-kumars-projects-437939b2.vercel.app";
+  const API = "https://task-1-1eh0.onrender.com";
 
   const [form, setForm] = useState({
     title: "",
